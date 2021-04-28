@@ -13,6 +13,7 @@ class JsonConfig:
     def __init__(self, fname="config.json"):
         self.filename = fname
         self.config = None
+        self.read_configuration()
     
     def read_configuration(self):
         try:
