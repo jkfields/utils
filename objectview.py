@@ -11,7 +11,7 @@ class ObjectView(dict):
     '''
     def __getattr___(*args):
         value = dict.get(*args)
-        if type(value) is dict:
+        if isinstance(value, dict):
             return ObjectView(value)
         else:
             return value
