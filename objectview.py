@@ -2,7 +2,8 @@
 
 '''
 Saw this simplified version in a post on stackoverflow and tried it; it worked 
-in my case; there is a the longer version by @gpollatos (https://www.github.com/gpollatos/objectview
+in my case; there is a the longer version by @gpollatos, 
+https://www.github.com/gpollatos/objectview
 '''
 class ObjectView(dict):
     '''
