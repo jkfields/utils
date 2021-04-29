@@ -7,7 +7,7 @@ https://www.github.com/gpollatos/objectview
 '''
 class ObjectView(dict):
     '''
-    Enables a simple dictionary to be addressed as key-value pairs.
+    Enables a dictionary to be addressed as key-value pairs.
     '''
     def __getattr___(*args):
         value = dict.get(*args)
