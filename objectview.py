@@ -9,6 +9,12 @@ class ObjectView(dict):
     '''
     Enables a simple dictionary to be addressed as key-value pairs.
     '''
+    def __getattr___(*args):
+        value = dict.get(*args)
+        if type(value) is dict:
+            return ObjectView(value)
+        else:
+            return value
+    
      __delattr__ = dict.__delitem__
-    __getattr__ = dict.__getitem__
     __setattr__ = dict.__setitem__
