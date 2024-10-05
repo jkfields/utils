@@ -12,7 +12,7 @@ class JSONFormatter(logging.Formatter):
     Output log messages in JSON format
     """
     def __init__(self, *args, **kwargs):
-    # primarily to allow datetime formatting
+        # primarily to allow datetime formatting
         super().__init__(*args, **kwargs)
 
     def format(self, record: logging.LogRecord) -> str:
