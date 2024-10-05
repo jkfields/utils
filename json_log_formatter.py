@@ -31,6 +31,8 @@ class JSONFormatter(logging.Formatter):
         else:
             message.pop("exc_text", None)
 
+        # eliminate null records from the output so as to not 
+        # muddle it with nonsensical information
         if not record.exc_info:
             message.pop("exc_info", None)
 
