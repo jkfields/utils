@@ -16,5 +16,5 @@ class ObjectView(dict):
         else:
             return value
     
-     __delattr__ = dict.__delitem__
+    __delattr__ = dict.__delitem__
     __setattr__ = dict.__setitem__
