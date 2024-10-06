@@ -27,7 +27,7 @@ class JsonConfig:
             raise JsonConfigError(msg)
         except ValueError, err:
             msg = "{err}; possible syntax error in json file".format(err=str(err))
-            raise JsonConfigErro(msg)
+            raise JsonConfigError(msg)
           
     def __str__(self):
         try:
