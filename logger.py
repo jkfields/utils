@@ -18,4 +18,4 @@ finally:
                         level=logging.DEBUG,
                         datefmt=DEFAULT_DATEFMT)
 
-logger = logging.getLogger(__name__)
+return logging.getLogger(__name__)
