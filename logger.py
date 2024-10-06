@@ -4,7 +4,7 @@ import logging
 from logging.config import fileConfig
 import os
 
-DEFAULT_FORMAT = "%(asctime)s %(levelname)s [%(module)s %(funcName)s:%(lineno)d] %(messages)s"
+DEFAULT_FORMAT = "%(asctime)s %(levelname)s [%(module)s %(funcName)s:%(lineno)d] - %(messages)s"
 DEFAULT_DATEFMT = "%Y-%m-%dT%H:%M:%S"
 
 '''
