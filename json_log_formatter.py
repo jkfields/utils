@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """
 This is a merge of roughly a dozen articles I found on
 rolling your own JSON Logger instead of using a 3rd party
